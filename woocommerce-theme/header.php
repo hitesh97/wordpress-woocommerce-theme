@@ -7,7 +7,7 @@
 </head>
 
 <body <?php body_class('d-flex flex-column'); ?>>
-    <div class="page-content">
+    <div class="page-container">
         <header class="sticky-top">
             <div class="container">
                 <nav class="nav-top">
