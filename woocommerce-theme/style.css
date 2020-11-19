@@ -9978,3 +9978,8 @@ footer {
   background-color: #f5f5f5;
   margin-top: -60px;
 }
+
+.woocommerce .woocommerce-input-wrapper {
+  width: 100%;
+  display: block;
+}
