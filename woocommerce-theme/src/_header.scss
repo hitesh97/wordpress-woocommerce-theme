@@ -1,3 +1,7 @@
+.body-class {
+  height: 100%;
+}
+
 header {
   background-color: white;
   padding: 1rem 0;
@@ -5,6 +9,12 @@ header {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 
   .top-menu {
+    /* hide menu for any size smaller than 600 px for now*/
+    display: none;
+
+    @media screen and (min-width: 602px) {
+      display: flex;
+    }
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -13,7 +23,20 @@ header {
       a {
         display: block;
         padding: 0.25rem 1rem;
+        color: $dark;
+        font-size: 1.1rem;
+        font-weight: bold;
       }
     }
   }
+  .nav-top {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+.page-content {
+  flex: 1 0 auto;
 }

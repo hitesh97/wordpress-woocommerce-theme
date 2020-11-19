@@ -42,17 +42,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         use: [
           {
             loader: "file-loader",
             options: {
-              outputPath: "images",
+              name: "[path][name].[ext]",
             },
           },
         ],
       },
-      {
+      /* {
         test: /\.(woff|woff2|ttf|otf|eot)$/,
         use: [
           {
@@ -62,7 +62,7 @@ module.exports = {
             },
           },
         ],
-      },
+      }, */
     ],
   },
 
